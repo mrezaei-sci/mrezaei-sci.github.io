@@ -1,12 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammad Rezaei</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>About Me – Mohammad Rezaei</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0 1rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    header {
+      padding: 2rem 0;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 1.5rem;
+    }
+    .profile-pic {
+      flex: 0 0 200px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .profile-pic img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .bio {
+      flex: 1;
+    }
+    .bio h1 {
+      margin-top: 0;
+    }
+    .links ul {
+      list-style: none;
+      padding: 0;
+    }
+    .links li {
+      margin: 0.5rem 0;
+    }
+    .links a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>Hi, I'm Mohammad Rezaei – a Biomedical Engineering graduate with interests in neurotechnology, signal processing, and wearable robotics.</p>
+  <header>
+    <h1>About Me</h1>
+  </header>
+  <div class="container">
+    <div class="profile-pic">
+      <!-- Replace with your photo -->
+      <img src="your-photo.jpg" alt="Mohammad Rezaei">
+    </div>
+    <div class="bio">
+      <p>
+  Hi, I’m <strong>Mohammad Rezaei</strong>. I’m a Biomedical Engineer with a deep curiosity for the brain’s mysteries and a heart set on helping people move better. Over the past years I’ve:
+</p>
+<ul>
+  <li>Used high‑resolution voxel‑based morphometry to uncover gray‑matter changes in Alzheimer’s Disease,</li>
+  <li>Built spiking‑neuron network simulations (Izhikevich models) to study critical avalanches and bifurcations,</li>
+  <li>Explored decision‑making and motor learning through EEG/ECG signal analysis and behavioral experiments.</li>
+</ul>
+<p>
+  I thrive at the intersection of <em>neuroimaging</em>, <em>computational neuroscience</em>, and <em>signal processing</em>. I’m especially excited about translating these insights into <em>wearable assistive</em> technologies and <em>rehabilitation</em> solutions—helping people regain mobility and independence. I can’t wait to bring my hands‑on experience and collaborative spirit to the MetaMobility Lab’s work on adaptive exoskeletons and personalized rehabilitation devices.
+</p>
+      <p>
+        My current work focuses on motor learning and IMU‑based kinematic estimation, 
+        and I’m eager to apply these skills to adaptive exoskeleton control and 
+        sensor‑fusion pipelines in the MetaMobility Lab.
+      </p>
+      <div class="links">
+        <ul>
+          <li><a href="mailto:mohammadr4030@gmail.com">✉️ Email</a></li>
+          <li><a href="https://github.com/Mhmwd13" target="_blank">🐙 GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/mrezaei/" target="_blank">💼 LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank">📚 Google Scholar</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
