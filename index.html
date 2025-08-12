@@ -8,7 +8,7 @@
   <!--  ——–––  BASIC STYLES  ——––– -->
   <style>
     :root{
-      --accent:#0d6efd;      /* Bootstrap-blue, adjust if you like  */
+      --accent:#0d6efd;
       --text:#222;
       --bg:#fafafa;
       --radius:10px;
@@ -16,7 +16,7 @@
 
     *{box-sizing:border-box;margin:0;padding:0}
     body{
-      font:400 1rem/1.7 system-ui, sans-serif;
+      font:400 1rem/1.7 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
       color:var(--text);  background:var(--bg);
       padding:0 1rem;  max-width:900px;  margin:auto;
     }
@@ -37,11 +37,17 @@
     /*  ——–––  FLEX HELPERS  ——––– */
     .flex{display:flex;gap:1.5rem;flex-wrap:wrap;align-items:flex-start}
     .grow{flex:1 1 260px}
-    .card{
-      background:#fff;border-radius:var(--radius);padding:1.5rem;box-shadow:0 4px 10px rgba(0,0,0,.07)
-    }
-    .tag{display:inline-block;font-size:.75rem;border:1px solid var(--accent);
-      padding:.2rem .5rem;border-radius:12px;margin:.25rem .3rem .25rem 0}
+    .card{background:#fff;border-radius:var(--radius);padding:1.5rem;box-shadow:0 4px 10px rgba(0,0,0,.07)}
+    .tag{display:inline-block;font-size:.75rem;border:1px solid var(--accent);padding:.2rem .5rem;border-radius:12px;margin:.25rem .3rem .25rem 0}
+
+    /*  ——–––  DETAILS/ABSTRACT  ——––– */
+    details{margin-top:.6rem}
+    details>summary{cursor:pointer;font-weight:600}
+    details .abstract, details .keywords{margin-top:.6rem}
+    .meta{font-size:.92rem;color:#444;margin:.6rem 0 0 0;padding-left:0}
+    .meta li::before{content:"";margin:0}
+    .meta li{margin:.15rem 0}
+    .muted{color:#666}
 
     /*  ——–––  SMALL SCREENS  ——––– */
     @media(max-width:500px){
@@ -54,8 +60,7 @@
 
   <!-- ----- HEADER ----- -->
   <header>
-    <!-- EDIT: replace profile.jpg with your own image path -->
-    <img src="IMG_1523.jpg" alt="Mohammad Rezaei">
+    <img src="IMG_1523.jpg" alt="Portrait of Mohammad Rezaei">
     <h1>Mohammad Rezaei</h1>
     <p>BME graduate  • Neuro/Deep-Learning researcher</p>
 
@@ -93,10 +98,12 @@
     <!-- ----- RESEARCH HIGHLIGHTS ----- -->
     <section id="research">
       <h2>Research Highlights</h2>
+
       <div class="flex">
+        <!-- Existing highlight cards (kept) -->
         <article class="card grow">
           <h3>Deep-morph biomarker pipeline for <span class="tag">Alzheimer’s</span></h3>
-          <p>96 % multi-class accuracy differentiating CN ↔ eMCI ↔ lMCI ↔ AD via
+          <p>96% multi-class accuracy differentiating CN ↔ eMCI ↔ lMCI ↔ AD via
              heatmap-guided CNNs + voxel-based morphometry.</p>
         </article>
 
@@ -112,26 +119,93 @@
              neural efficiency to in-game options.</p>
         </article>
       </div>
+
+      <!-- NEW: Effective-Connectivity Markers -->
+      <article class="card" style="margin-top:1.5rem">
+        <h3>Effective-Connectivity Markers of Motor Skill Learning in the Cortico–Basal Ganglia Circuit
+          <span class="tag">fMRI</span><span class="tag">sDCM</span><span class="tag">Motor learning</span>
+        </h3>
+        <p class="muted">Directional reorganization after 1‑week foot‑motor practice: ↑ SMA→M1, ↑ thalamus→striatal drive, ↑ putamen→pallidum; ↓ M1→putamen.</p>
+        <details>
+          <summary>Abstract</summary>
+          <div class="abstract">
+            <p>
+              Practice changes how we move and how the brain talks to itself. We asked whether a short foot-motor training program leaves a directional “signature” in resting networks. Thirteen healthy adults trained for one week to draw shapes with ankle-controlled movements. Speed rose by ~24% and distance-to-target fell by ~15%. Resting-state fMRI was acquired before and after training. Using spectral dynamic causal modeling, we estimated directed coupling within a hypothesis-driven motor circuit (supplementary motor area, primary motor cortex, dorsal premotor cortex, thalamus, caudate, putamen, pallidum, and a cerebellar relay). Group analysis revealed selective changes: stronger right SMA→left M1 influence, stronger thalamus→striatal drive (to caudate and putamen), and stronger putamen→pallidum coupling; in contrast, left M1→left putamen decreased. These shifts suggest that practice increases top-down drive from planning to execution and reinforces basal ganglia pathways that favor the trained action, while pruning less efficient cortico-striatal routes. The results provide directional evidence that short practice reorganizes cortico–basal ganglia communication at rest and align with a model in which reinforcement and error-based processes jointly shape skill. This mechanistic picture points to practical targets for rehabilitation, such as pairing practice with stimulation of SMA or strategies that enhance thalamic/striatal engagement.
+            </p>
+          </div>
+          <div class="keywords"><strong>Keywords—</strong> motor learning, resting-state fMRI, spectral dynamic causal modeling, effective connectivity, neurorehabilitation</div>
+          <details>
+            <summary>Authors & Affiliations</summary>
+            <ul class="meta">
+              <li><strong>1st Given Name Surname</strong> — dept. name of organization (of Affiliation); name of organization (of Affiliation); City, Country; email address or ORCID</li>
+              <li><strong>2nd Given Name Surname</strong> — dept. name of organization (of Affiliation); name of organization (of Affiliation); City, Country; email address or ORCID</li>
+              <li><strong>3rd Given Name Surname</strong> — dept. name of organization (of Affiliation); name of organization (of Affiliation); City, Country; email address or ORCID</li>
+              <li><strong>4th Given Name Surname</strong> — dept. name of organization (of Affiliation); name of organization (of Affiliation); City, Country; email address or ORCID</li>
+            </ul>
+          </details>
+        </details>
+      </article>
+
+      <!-- NEW: Creative Playmaking tHOFC study -->
+      <article class="card" style="margin-top:1.5rem">
+        <h3>Brain Network Reconfiguration During Creative Playmaking: A Task‑fMRI and tHOFC Investigation
+          <span class="tag">Task‑fMRI</span><span class="tag">tHOFC</span><span class="tag">Sports cognition</span>
+        </h3>
+        <ul class="meta">
+          <li><strong>1st</strong> Mohammad Rezaei — Department of Engineering Science, University of Tehran, Tehran, Iran; <a href="mailto:moh.rezaei@ut.ac.ir">moh.rezaei@ut.ac.ir</a></li>
+          <li><strong>2nd</strong> Mahdi Siami — Department of Engineering Science, University of Tehran, Tehran, Iran</li>
+          <li><strong>3rd</strong> Alireza Talesh Jafadideh* — Department of Engineering Science, University of Tehran, Tehran, Iran; <a href="mailto:alireza.talesh@ut.ac.ir">alireza.talesh@ut.ac.ir</a></li>
+        </ul>
+        <details>
+          <summary>Abstract</summary>
+          <div class="abstract">
+            <p>
+              Creativity is the weapon of elite soccer players. The best players often make a surprising move, such as an unexpected passing lane or invent an unscripted dribble, while everyone else is still reading the play. Neuroimaging work has shown that years of training reshape functional brain architecture; yet, most studies rely on pairwise (low-order) connectivity and resting-state scans, leaving a significant gap: what does the brain do at the exact moment a fresh idea appears?
+            </p>
+            <p>
+              We wanted to see what the brain is doing right when that fresh idea pops up. Thirty-five experienced male players lay in an fMRI scanner, watched real match clips, and—at a freeze-frame—quietly pictured the most original, goal-focused move they could. We measured topographical high-order functional connectivity (tHOFC), a “correlation-of-correlations” method that tracks how whole-brain networks echo one another.
+            </p>
+            <p>
+              Players rated highly by expert coaches (Soccer Vision Training, SVT) didn’t just crank up every connection. Instead, six specific links from a right-side peripheral-vision area to both dorsal and ventral attention hubs got weaker, while the brain’s overall tHOFC level stayed the same. In short, creative experts seem to loosen the usual vision-attention handshake, likely freeing up mental space to run inner simulations and hatch original plays. This is the first sports-cognition study to use tHOFC during a live-play creativity task, and it hints that targeted brain training or gentle neuro-stimulation could someday help players unlock more on-field ideas.
+            </p>
+          </div>
+          <div class="keywords"><strong>Keywords—</strong> Creative decision-making, Functional MRI (fMRI), Topographical high-order functional connectivity (tHOFC)</div>
+        </details>
+      </article>
+
     </section>
 
     <!-- ----- PROJECTS ----- -->
     <section id="projects">
       <h2>Open-Source Projects</h2>
       <div class="flex">
+        <!-- Existing project cards (kept) -->
         <article class="card grow">
-          <h3><a href="https://github.com/Mhmwd13">Py-Bio-Imaging Toolkit</a></h3>
-          <p>Edge detection, CLAHE, DCT compression, cell segmentation … all in
-             one clean Python package.</p>
+          <h3><a href="https://github.com/Mhmwd13" target="_blank" rel="noopener">Py-Bio-Imaging Toolkit</a></h3>
+          <p>Edge detection, CLAHE, DCT compression, cell segmentation … all in one clean Python package.</p>
         </article>
 
         <article class="card grow">
           <h3><a href="#">EMG Swim Patterns</a></h3>
-          <p>k-means + SPM to discover muscle-activation signatures of elite
-             front-crawl swimmers.</p>
+          <p>k-means + SPM to discover muscle-activation signatures of elite front-crawl swimmers.</p>
+        </article>
+
+        <!-- NEW: Warm Cognition NPC Framework -->
+        <article class="card grow">
+          <h3>Warm Cognition Framework for NPCs <span class="tag">Affective Computing</span><span class="tag">Design</span></h3>
+          <p>
+            Conceptual framework that augments cold, logic-only agents with emotion-aware appraisal, enabling natural, context-sensitive NPC behaviors. This phase covers theory and design specifications; no software release yet.
+          </p>
+          <details>
+            <summary>Overview</summary>
+            <div class="abstract">
+              Emotions play a fundamental role in human cognition and interactions. Conventional AI systems often operate on the basis of cold cognition and cannot adapt behavior to user affect, leading to monotonous, unnatural NPC interactions. Building on affective computing, this project specifies a referenceable framework that bridges purely logical decision-making and emotion-driven decision-making for richer human–machine interaction. (Design & analysis only.)
+            </div>
+          </details>
         </article>
       </div>
       <p style="margin-top:1rem">
-        → See more on <a href="https://github.com/Mhmwd13">GitHub</a>.
+        → See more on <a href="https://github.com/Mhmwd13" target="_blank" rel="noopener">GitHub</a>.
       </p>
     </section>
 
@@ -142,28 +216,26 @@
         <div class="grow">
           <h3>Education</h3>
           <ul>
-            <li><strong>M.Sc.</strong> Sport Engineering – Univ. of Tehran (2024 – )</li>
+            <li><strong>M.Sc.</strong> Biomedical Eng. – Univ. of Tehran (2024 – )</li>
             <li><strong>B.Sc.</strong> Biomedical Eng. – Azad Tehran Univ. of Med. Sci. (2024)</li>
           </ul>
 
           <h3>Core Skills</h3>
           <p class="tag">Python</p><p class="tag">MATLAB</p>
           <p class="tag">FSL/Freesurfer</p><p class="tag">ML & DL</p>
-          <p class="tag">Signal Processing</p><p class="tag">Neuro-imaging</p>
+          <p class="tag">Signal Processing</p><p class="tag">Neuro‑imaging</p>
         </div>
 
         <div class="grow">
           <h3>Selected Certs</h3>
           <ul>
-            <li>Johns Hopkins Neuro-imaging (2024)</li>
+            <li>Johns Hopkins Neuro‑imaging (2024)</li>
             <li>IBM Python for AI & DS (2024)</li>
             <li>Vanderbilt Data Mgmt (2024)</li>
           </ul>
 
           <h3>Honors</h3>
-          <ul>
-
-          </ul>
+          <ul></ul>
         </div>
       </div>
       <p style="margin-top:1.2rem">
@@ -174,17 +246,14 @@
     <!-- ----- CONTACT ----- -->
     <section id="contact">
       <h2>Get in Touch</h2>
+      <p>Whether you’d like to collaborate or discuss brain‑inspired AI, drop me a line:</p>
       <p>
-        Whether you’d like to collaborate, discuss brain-inspired AI, drop me a line:
+        <a href="mailto:mohammadr4030@gmail.com">mohammadr4030@gmail.com</a>
       </p>
       <p>
-        <a href="mailto:mohammadr4030@gmail.com">mohammadr4030@gmail.com</a> <br>
-      
-      </p>
-      <p>
-        <a href="www.linkedin.com/in/mohammad-rezaei-rze2001" target="_blank">LinkedIn</a> ·
-        <a href="https://github.com/mrezaei-sci" target="_blank">GitHub</a> ·
-        <a href="http://www.youtube.com/@MoScientific" target="_blank">YouTube</a>
+        <a href="https://www.linkedin.com/in/mohammad-rezaei-rze2001" target="_blank" rel="noopener">LinkedIn</a> ·
+        <a href="https://github.com/mrezaei-sci" target="_blank" rel="noopener">GitHub</a> ·
+        <a href="https://www.youtube.com/@MoScientific" target="_blank" rel="noopener">YouTube</a>
       </p>
     </section>
   </main>
