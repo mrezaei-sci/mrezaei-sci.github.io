@@ -1,431 +1,266 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="color-scheme" content="light dark" />
 
-  <title>Mohammad Rezaei | Neuroimaging, Neural Engineering & Deep Learning</title>
-  <meta name="description" content="Mohammad Rezaei — Biomedical Engineering (M.Sc.) at University of Tehran. Neuroimaging (fMRI), brain networks, effective connectivity, deep learning for clinical and performance neuroscience." />
+  <title>Mohammad Rezaei — Neuroimaging × Deep Learning × Brain Networks</title>
+  <meta name="description" content="Mohammad Rezaei. Neuroimaging (fMRI), brain networks, effective connectivity, and deep learning for clinical + performance neuroscience. PhD applicant." />
 
-  <!-- Canonical (set to your real URL) -->
+  <!-- Canonical / OG (update if you later add a custom domain) -->
   <link rel="canonical" href="https://mrezaei-sci.github.io/" />
-
-  <!-- Open Graph (better previews on LinkedIn/Twitter/etc.) -->
-  <meta property="og:title" content="Mohammad Rezaei | Neuroimaging, Neural Engineering & Deep Learning" />
-  <meta property="og:description" content="M.Sc. Biomedical Engineering (University of Tehran). fMRI brain networks, effective connectivity, deep learning for clinical and performance neuroscience." />
+  <meta property="og:title" content="Mohammad Rezaei — Neuroimaging × Deep Learning × Brain Networks" />
+  <meta property="og:description" content="fMRI brain networks, effective connectivity, and deep learning for clinical + performance neuroscience. PhD applicant." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mrezaei-sci.github.io/" />
   <meta property="og:image" content="https://mrezaei-sci.github.io/assets/img/og.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
 
   <link rel="icon" href="assets/img/og.jpg" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-
-  <!-- Structured data (Person) -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Mohammad Rezaei",
-    "url":"https://mrezaei-sci.github.io/",
-    "email":"moh.rezaei@ut.ac.ir",
-    "affiliation":{
-      "@type":"CollegeOrUniversity",
-      "name":"University of Tehran"
-    },
-    "jobTitle":"Biomedical Engineering (M.Sc.) Student",
-    "sameAs":[
-      "https://github.com/mrezaei-sci",
-      "https://www.youtube.com/@MoScientific",
-      "https://www.linkedin.com/in/mohammad-rezaei-rze2001"
-    ]
-  }
-  </script>
+  <link rel="stylesheet" href="assets/css/site.css" />
+  <script defer src="assets/js/data.js"></script>
+  <script defer src="assets/js/site.js"></script>
 </head>
 
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip" href="#main">Skip</a>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="hero">
-        <div class="hero-left">
-          <div class="avatar-wrap">
-            <!-- Put your photo here -->
-            <img class="avatar" src="assets/img/profile.jpg" alt="Portrait of Mohammad Rezaei" />
-          </div>
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__text">Mohammad Rezaei</span>
+      </a>
 
-          <div class="hero-text">
-            <h1>Mohammad Rezaei</h1>
-            <p class="subtitle">
-              Biomedical Engineering (M.Sc.) · Neuroimaging · Brain Networks · Deep Learning
-            </p>
-
-            <div class="cta-row">
-              <a class="btn primary" href="Mohammad_Rezaei_CV.pdf" target="_blank" rel="noopener">
-                Download CV (PDF)
-              </a>
-              <a class="btn" href="#contact">Contact</a>
-
-              <button class="btn icon" id="themeToggle" type="button" aria-label="Toggle theme">
-                <span class="icon-dot" aria-hidden="true"></span>
-                Theme
-              </button>
-            </div>
-
-            <div class="icon-row" aria-label="Social links">
-              <a class="icon-link" href="mailto:moh.rezaei@ut.ac.ir" title="Email">
-                <span class="icon" aria-hidden="true">✉</span><span>Email</span>
-              </a>
-              <a class="icon-link" href="https://github.com/mrezaei-sci" target="_blank" rel="noopener">
-                <span class="icon" aria-hidden="true">⌂</span><span>GitHub</span>
-              </a>
-              <a class="icon-link" href="https://www.linkedin.com/in/mohammad-rezaei-rze2001" target="_blank" rel="noopener">
-                <span class="icon" aria-hidden="true">in</span><span>LinkedIn</span>
-              </a>
-              <a class="icon-link" href="https://www.youtube.com/@MoScientific" target="_blank" rel="noopener">
-                <span class="icon" aria-hidden="true">▶</span><span>YouTube</span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-right">
-          <div class="card highlight">
-            <h2 class="card-title">Research Focus</h2>
-            <ul class="bullets">
-              <li>Resting-state fMRI brain networks & effective connectivity</li>
-              <li>Lag-aware inference, FWER control, permutation/statistical rigor</li>
-              <li>Deep learning for neuroanatomical biomarkers (VBM/CAT12 + CNNs)</li>
-              <li>Performance neuroscience: motor learning & creative decision-making</li>
-            </ul>
-          </div>
-
-          <div class="card highlight">
-            <h2 class="card-title">Currently</h2>
-            <p class="muted">
-              M.Sc. Biomedical Engineering (Sport Engineering track), University of Tehran.
-              Thesis: cortical–subcortical contributions to accuracy–speed networks after motor learning.
-            </p>
-            <div class="meta-grid">
-              <div><span class="k">Email</span><span class="v">moh.rezaei@ut.ac.ir</span></div>
-              <div><span class="k">Web</span><span class="v">mrezaei-sci.github.io</span></div>
-              <div><span class="k">Phone</span><span class="v">+98 919 697 8050</span></div>
-              <div><span class="k">Location</span><span class="v">Tehran, Iran</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <nav class="nav" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#highlights">Highlights</a>
-        <a href="#publications">Publications</a>
-        <a href="#projects">Projects</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#service">Service</a>
-        <a href="#repos">GitHub</a>
-        <a href="#contact">Contact</a>
+      <nav class="nav" id="nav">
+        <a class="nav__link is-active" href="index.html">Home</a>
+        <a class="nav__link" href="research.html">Research</a>
+        <a class="nav__link" href="work.html">Work</a>
+        <a class="nav__link" href="publications.html">Publications</a>
+        <a class="nav__link" href="contact.html">Contact</a>
+        <a class="nav__cta" href="Mohammad_Rezaei_CV.pdf" target="_blank" rel="noopener">Download CV</a>
       </nav>
+
+      <div class="topbar__actions">
+        <button class="iconbtn" id="themeToggle" type="button" aria-label="Toggle theme">
+          <span class="iconbtn__icon" aria-hidden="true">◐</span>
+        </button>
+        <button class="iconbtn" id="menuToggle" type="button" aria-label="Open menu">
+          <span class="iconbtn__icon" aria-hidden="true">≡</span>
+        </button>
+      </div>
     </div>
   </header>
 
-  <main id="main" class="container" tabindex="-1">
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <h2>About</h2>
-      <div class="grid-2">
-        <div class="card">
-          <p>
-            I’m a biomedical engineering researcher working at the intersection of
-            <strong>neuroimaging</strong>, <strong>brain-network modeling</strong>, and
-            <strong>deep learning</strong>. My current work focuses on how practice reshapes
-            <em>cortico–subcortical loops</em> and how network reconfiguration maps onto distinct
-            learning components (accuracy vs. speed/vigor).
+  <main id="main" class="wrap">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__grid">
+        <div class="hero__left">
+          <p class="kicker">PhD applicant · Neuroimaging + ML</p>
+          <h1 class="headline">
+            I build <span class="glow">brain-network</span> pipelines that connect
+            <span class="glow2">mechanism</span> to <span class="glow">behavior</span>.
+          </h1>
+          <p class="subhead">
+            My work sits at the intersection of <strong>resting/task fMRI</strong>,
+            <strong>effective/directed connectivity</strong>, and <strong>deep learning</strong>—
+            aiming for clinically useful biomarkers and performance-relevant neuroscience.
           </p>
-          <p class="muted">
-            I build reproducible pipelines (MATLAB/Python, Linux/Git) and prioritize statistically
-            principled inference (permutation frameworks, family-wise error control).
-          </p>
+
+          <div class="hero__buttons">
+            <a class="btn btn--primary" href="work.html">View featured work</a>
+            <a class="btn" href="research.html">Research summary</a>
+            <button class="btn btn--ghost" type="button" data-copy="moh.rezaei@ut.ac.ir">Copy email</button>
+          </div>
+
+          <div class="hero__meta">
+            <div class="meta">
+              <span class="meta__k">Focus</span>
+              <span class="meta__v">fMRI · Brain networks · DL</span>
+            </div>
+            <div class="meta">
+              <span class="meta__k">Based</span>
+              <span class="meta__v">Tehran, Iran</span>
+            </div>
+            <div class="meta">
+              <span class="meta__k">Affiliation</span>
+              <span class="meta__v">University of Tehran</span>
+            </div>
+          </div>
+
+          <div class="social">
+            <a class="social__a" href="https://github.com/mrezaei-sci" target="_blank" rel="noopener">GitHub</a>
+            <a class="social__a" href="https://www.linkedin.com/in/mohammad-rezaei-rze2001" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="social__a" href="https://www.youtube.com/@MoScientific" target="_blank" rel="noopener">YouTube</a>
+          </div>
         </div>
 
-        <div class="card">
-          <h3 class="h3">Education</h3>
-          <ul class="bullets">
-            <li><strong>M.Sc.</strong> Biomedical Engineering (Sport Engineering track), University of Tehran (2024–present)</li>
-            <li><strong>B.S.</strong> Biomedical Engineering, Azad Tehran University of Medical Sciences (2019–2024)</li>
-          </ul>
+        <div class="hero__right">
+          <div class="portrait">
+            <img src="assets/img/profile.jpg" alt="Mohammad Rezaei portrait" class="portrait__img" />
+            <div class="portrait__card">
+              <p class="portrait__title">Now</p>
+              <p class="portrait__text">
+                M.Sc. Biomedical Engineering (Sport Engineering track), University of Tehran.
+                Thesis: cortical–subcortical contributions to accuracy–speed networks after motor task learning.
+              </p>
+              <div class="chips">
+                <span class="chip">rs-fMRI</span>
+                <span class="chip">Directed connectivity</span>
+                <span class="chip">Permutation inference</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-          <h3 class="h3">Core Skills</h3>
+      <!-- “Real website” feel: subtle marquee -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Network neuroscience</span><span>·</span>
+          <span>Effective connectivity</span><span>·</span>
+          <span>Deep morphometry</span><span>·</span>
+          <span>Computational models</span><span>·</span>
+          <span>Reproducible pipelines</span><span>·</span>
+          <span>Performance neuroscience</span><span>·</span>
+          <span>Network neuroscience</span><span>·</span>
+          <span>Effective connectivity</span><span>·</span>
+          <span>Deep morphometry</span><span>·</span>
+          <span>Computational models</span><span>·</span>
+          <span>Reproducible pipelines</span><span>·</span>
+          <span>Performance neuroscience</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT I DO (curated, not CV) -->
+    <section class="section">
+      <div class="section__head">
+        <h2>What I build</h2>
+        <p class="muted">Three tracks that summarize my work (details on the Research page).</p>
+      </div>
+
+      <div class="cards cards--3">
+        <article class="card reveal">
+          <h3>Directed brain networks</h3>
+          <p>
+            Time-lagged dependency estimation and principled error control for sparse network backbones.
+          </p>
           <div class="tags">
-            <span class="tag">Python</span><span class="tag">MATLAB</span><span class="tag">Linux</span><span class="tag">Git</span><span class="tag">LaTeX</span>
-            <span class="tag">SPM12</span><span class="tag">FSL</span><span class="tag">FreeSurfer</span><span class="tag">CAT12</span><span class="tag">fMRIPrep</span>
-            <span class="tag">fMRI GLM</span><span class="tag">VBM</span><span class="tag">Connectivity</span><span class="tag">Deep Learning</span>
-            <span class="tag">EEG/EMG</span><span class="tag">Statistics</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- HIGHLIGHTS -->
-    <section id="highlights" class="section">
-      <h2>Research Highlights</h2>
-      <div class="cards">
-        <article class="card">
-          <h3 class="h3">Deep learning + morphometry for Alzheimer’s biomarkers</h3>
-          <p class="muted">
-            Early diagnosis of Alzheimer’s disease based on morphological changes, combining voxel-based morphometry and deep learning.
-          </p>
-          <div class="pill-row">
-            <span class="pill">VBM/CAT12</span><span class="pill">CNN</span><span class="pill">NeuroImage: Reports</span>
+            <span class="tag">rs-fMRI</span><span class="tag">FWER</span><span class="tag">Lag-aware</span>
           </div>
         </article>
 
-        <article class="card">
-          <h3 class="h3">Motor-skill learning and cortico–basal ganglia reorganization</h3>
-          <p class="muted">
-            Whole-brain directed connectivity analysis of pre/post-training resting-state fMRI; lag-aware dependency estimation and controlled inference.
+        <article class="card reveal">
+          <h3>Deep morphometry biomarkers</h3>
+          <p>
+            Structural MRI pipelines combining voxel-based morphometry with deep learning for early disease signals.
           </p>
-          <div class="pill-row">
-            <span class="pill">rs-fMRI</span><span class="pill">Directed connectivity</span><span class="pill">FWER</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3 class="h3">Creative decision-making in soccer experts (task-fMRI)</h3>
-          <p class="muted">
-            Sparse, directed subnetwork signatures of neural efficiency during creative choices under realistic sports constraints.
-          </p>
-          <div class="pill-row">
-            <span class="pill">Task-fMRI</span><span class="pill">Sparse networks</span><span class="pill">Creativity</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3 class="h3">Criticality in excitatory–inhibitory spiking networks</h3>
-          <p class="muted">
-            Izhikevich E–I simulations with mean-field/bifurcation analysis to map stability and avalanche-like regimes.
-          </p>
-          <div class="pill-row">
-            <span class="pill">Izhikevich</span><span class="pill">Bifurcation</span><span class="pill">Dynamics</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- PUBLICATIONS -->
-    <section id="publications" class="section">
-      <h2>Publications</h2>
-
-      <div class="grid-2">
-        <div class="card">
-          <h3 class="h3">Peer-Reviewed Journal Article</h3>
-          <ol class="pubs">
-            <li>
-              <span class="pub-title">
-                Early diagnosis of Alzheimer’s disease based on brain morphological changes: a comprehensive approach combining voxel-based morphometry and deep learning.
-              </span>
-              <span class="pub-authors">Rezaei, M.; Mohammadikhaveh, S.; Faraji, H.; Ardalani, R.; Rezaei, M.; Shirazinodeh, A.</span>
-              <span class="pub-venue">
-                <em>NeuroImage: Reports</em> (in press/2026). DOI:
-                <a href="https://doi.org/10.1016/j.ynirp.2025.100315" target="_blank" rel="noopener">10.1016/j.ynirp.2025.100315</a>
-              </span>
-            </li>
-          </ol>
-        </div>
-
-        <div class="card">
-          <h3 class="h3">Manuscripts (Submitted / Under Review)</h3>
-          <ol class="pubs">
-            <li>
-              <span class="pub-title">Distinct cortical–subcortical contributions underlying accuracy–speed networks following motor task learning: a resting-state fMRI study.</span>
-              <span class="pub-authors">Rezaei, M.; Bahrami, F.; Tahmasebi Boroujeni, S.; Talesh Jafadideh, A.</span>
-              <span class="pub-venue"><em>Nature Communications</em> (Submitted Feb 18, 2026).</span>
-            </li>
-            <li>
-              <span class="pub-title">Neural efficiency in creative decision-making: a sparse directed subnetwork in soccer experts revealed by fMRI.</span>
-              <span class="pub-authors">Rezaei, M.; Zarei, A.; Talesh Jafadideh, A.</span>
-              <span class="pub-venue"><em>NeuroImage</em> (Under Review; Submitted Dec 20, 2025).</span>
-            </li>
-            <li>
-              <span class="pub-title">Permutation-Controlled Lag-Aware Inference of Sparse Brain Network Backbones in Real-World Creative Decision-making: A fMRI Study.</span>
-              <span class="pub-authors">Rezaei, M.; Talesh Jafadideh, A.</span>
-              <span class="pub-venue"><em>IEEE Journal of Biomedical and Health Informatics</em> (Under Review; Submitted Feb 16, 2026).</span>
-            </li>
-          </ol>
-        </div>
-      </div>
-
-      <div class="card" style="margin-top:1rem">
-        <h3 class="h3">Conference Presentations (Oral)</h3>
-        <ul class="bullets">
-          <li><strong>Brain network reconfiguration during creative playmaking: a task-fMRI study.</strong> ICBME (Nov 2025) — Presenter.</li>
-          <li><strong>Effective connectivity alterations within the cortico–basal ganglia circuit associated with motor skill learning.</strong> ICBME (Nov 2025) — Presenter.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <h2>Selected Research Projects</h2>
-      <div class="cards">
-        <article class="card">
-          <h3 class="h3">M.Sc. Thesis — Effective Connectivity After Motor Skill Learning (rs-fMRI)</h3>
-          <p class="muted">
-            Pre/post-training resting-state fMRI; lag-aware dependency estimation across cortical/subcortical ROIs;
-            controlled inference across links; linking network reconfiguration to kinematic learning outcomes.
-          </p>
-          <div class="pill-row">
-            <span class="pill">SPM12/FSL</span><span class="pill">MATLAB/Python</span><span class="pill">Reproducible QC</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3 class="h3">KIMORE Squat — Deep computer vision for movement scoring</h3>
-          <p class="muted">
-            Pose-based action quality assessment from Kinect skeleton sequences; temporal features and sequence models for robust scoring.
-          </p>
-          <div class="pill-row">
-            <span class="pill">PyTorch</span><span class="pill">CNN→BiLSTM</span><span class="pill">TCN</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3 class="h3">EEG artifact removal via particle filtering</h3>
-          <p class="muted">
-            Bayesian denoising to jointly track clean EEG and time-varying EOG leakage while preserving rhythms for downstream analysis.
-          </p>
-          <div class="pill-row">
-            <span class="pill">MNE</span><span class="pill">Bayesian filtering</span><span class="pill">Signal processing</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3 class="h3">ADHD risk-taking signatures (task-fMRI, BART)</h3>
-          <p class="muted">
-            Preprocessing and whole-brain inference, parcellation mapping, and network-level interpretation for ADHD vs control comparisons.
-          </p>
-          <div class="pill-row">
-            <span class="pill">BIDS/fMRIPrep</span><span class="pill">SPM12</span><span class="pill">Network analysis</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- TEACHING -->
-    <section id="teaching" class="section">
-      <h2>Teaching</h2>
-      <div class="grid-2">
-        <div class="card">
-          <h3 class="h3">Teaching Assistant — Biological Signal Processing (M.Sc.)</h3>
-          <p class="muted">
-            University of Tehran (Spring 2026). Led recitations, supported MATLAB/Python assignments, and helped with EEG/EMG fundamentals
-            (filtering, spectral analysis, artifact handling).
-          </p>
-        </div>
-
-        <div class="card">
-          <h3 class="h3">Selected Coursework</h3>
           <div class="tags">
-            <span class="tag">Dynamical Systems in Neuroscience</span>
-            <span class="tag">Biological Signal Processing</span>
-            <span class="tag">Digital Image Processing</span>
-            <span class="tag">Signals & Systems</span>
-            <span class="tag">Machine Learning</span>
-            <span class="tag">Stochastic Processes</span>
-            <span class="tag">Linear Algebra</span>
+            <span class="tag">VBM/CAT12</span><span class="tag">CNN</span><span class="tag">Explainability</span>
           </div>
-        </div>
-      </div>
-    </section>
+        </article>
 
-    <!-- SERVICE -->
-    <section id="service" class="section">
-      <h2>Service & Outreach</h2>
-      <div class="grid-2">
-        <div class="card">
-          <h3 class="h3">Peer Review</h3>
-          <ul class="bullets">
-            <li>Reviewer — <em>NeuroImage</em></li>
-            <li>Reviewer — <em>Biomedical Signal Processing and Control</em></li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3 class="h3">MoScientific (Open Education)</h3>
-          <p class="muted">
-            Founder of <strong>MoScientific</strong> — bilingual (EN/FA) tutorials on fMRI concepts, preprocessing & QC,
-            SPM GLM workflows, and neuroimaging visualization.
-          </p>
-          <a class="btn" href="https://www.youtube.com/@MoScientific" target="_blank" rel="noopener">Visit YouTube</a>
-        </div>
-      </div>
-
-      <div class="card" style="margin-top:1rem">
-        <h3 class="h3">Professional Experience</h3>
-        <ul class="bullets">
-          <li><strong>R&D Researcher</strong>, Cognitive Science & Technology Innovation Center (2025–present) — affect-aware decision architecture for NPC behavior; evaluation protocol and engineering handoff.</li>
-          <li><strong>Biomedical Engineering Assistant (Intern)</strong>, Omid Hospital (Dec 2022–Jun 2023) — preventive maintenance, troubleshooting, compliance documentation.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- GITHUB REPOS (auto-populated) -->
-    <section id="repos" class="section">
-      <h2>GitHub (Selected Repositories)</h2>
-      <p class="muted">
-        This section auto-loads your most relevant public repositories (updated/stars) from GitHub.
-      </p>
-      <div id="repoGrid" class="cards" aria-live="polite"></div>
-
-      <div style="margin-top:1rem">
-        <a class="btn" href="https://github.com/mrezaei-sci" target="_blank" rel="noopener">View all on GitHub</a>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <div class="grid-2">
-        <div class="card">
-          <h3 class="h3">Email</h3>
+        <article class="card reveal">
+          <h3>Mechanism → behavior</h3>
           <p>
-            <a href="mailto:moh.rezaei@ut.ac.ir">moh.rezaei@ut.ac.ir</a><br />
-            <a href="mailto:mohammadr4030@gmail.com">mohammadr4030@gmail.com</a>
+            Linking network reconfiguration to kinematics, decision quality, and skill acquisition.
           </p>
+          <div class="tags">
+            <span class="tag">Motor learning</span><span class="tag">Creativity</span><span class="tag">Task-fMRI</span>
+          </div>
+        </article>
+      </div>
+    </section>
 
-          <h3 class="h3">Links</h3>
+    <!-- FEATURED WORK (auto from data.js) -->
+    <section class="section">
+      <div class="section__head">
+        <h2>Featured work</h2>
+        <p class="muted">Curated case-studies (not a full CV list).</p>
+      </div>
+
+      <div id="featuredGrid" class="cards cards--2"></div>
+
+      <div class="section__foot">
+        <a class="btn" href="work.html">See all projects</a>
+      </div>
+    </section>
+
+    <!-- SELECTED PUBLICATIONS (curated) -->
+    <section class="section">
+      <div class="section__head">
+        <h2>Selected publications</h2>
+        <p class="muted">A few highlights — full list on Publications page.</p>
+      </div>
+      <div id="pubHighlights" class="stack"></div>
+      <div class="section__foot">
+        <a class="btn" href="publications.html">View all publications</a>
+      </div>
+    </section>
+
+    <!-- REPOS (GitHub API) -->
+    <section class="section">
+      <div class="section__head">
+        <h2>Code</h2>
+        <p class="muted">
+          Auto-loaded from GitHub (public repos). If you want “pinned” projects, we can hard-pin manually.
+        </p>
+      </div>
+      <div id="repoGrid" class="cards cards--3"></div>
+      <div class="section__foot">
+        <a class="btn" href="https://github.com/mrezaei-sci" target="_blank" rel="noopener">Open GitHub</a>
+      </div>
+    </section>
+
+    <!-- MEDIA -->
+    <section class="section">
+      <div class="section__head">
+        <h2>MoScientific</h2>
+        <p class="muted">Bilingual (EN/FA) neuroimaging tutorials and workflow notes.</p>
+      </div>
+
+      <div class="cards cards--2">
+        <article class="card reveal">
+          <h3>YouTube</h3>
+          <p>Short, practical content: fMRI preprocessing/QC, GLM, visualization, and research tips.</p>
+          <a class="btn btn--primary" href="https://www.youtube.com/@MoScientific" target="_blank" rel="noopener">Visit channel</a>
+        </article>
+
+        <article class="card reveal">
+          <h3>Want a 1-page research statement?</h3>
           <p>
-            <a href="https://www.linkedin.com/in/mohammad-rezaei-rze2001" target="_blank" rel="noopener">LinkedIn</a> ·
-            <a href="https://github.com/mrezaei-sci" target="_blank" rel="noopener">GitHub</a> ·
-            <a href="https://www.youtube.com/@MoScientific" target="_blank" rel="noopener">YouTube</a>
+            I can add a “Research Statement” page with a clean narrative + figures (not CV bullets) for PhD PI’s.
           </p>
-        </div>
-
-        <div class="card">
-          <h3 class="h3">References</h3>
-          <ul class="bullets">
-            <li><strong>Prof. Fariba Bahrami</strong> — fbahrami@ut.ac.ir</li>
-            <li><strong>Prof. Alireza Talesh Jafadideh</strong> — alireza.talesh@ut.ac.ir</li>
-          </ul>
-
-          <h3 class="h3">Quick note for PhD applications</h3>
-          <p class="muted">
-            If you’d like, add a short “Prospective PhD topics” paragraph here tailored to each lab (one sentence on your fit + one sentence on a concrete project idea).
-          </p>
-        </div>
+          <a class="btn" href="contact.html">Message me</a>
+        </article>
       </div>
     </section>
 
     <footer class="footer">
-      <div class="footer-inner">
-        <span>© <span id="year"></span> Mohammad Rezaei</span>
-        <span class="muted">· Built on GitHub Pages</span>
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand">Mohammad Rezaei</p>
+          <p class="muted">Neuroimaging · Brain networks · Deep learning</p>
+        </div>
+        <div class="footer__links">
+          <a href="research.html">Research</a>
+          <a href="work.html">Work</a>
+          <a href="publications.html">Publications</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer__links">
+          <a href="Mohammad_Rezaei_CV.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+          <a href="https://github.com/mrezaei-sci" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/mohammad-rezaei-rze2001" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.youtube.com/@MoScientific" target="_blank" rel="noopener">YouTube</a>
+        </div>
       </div>
+      <p class="footer__tiny">© <span id="year"></span> · Built on GitHub Pages</p>
     </footer>
   </main>
-
-  <script src="assets/js/main.js"></script>
 </body>
 </html>
