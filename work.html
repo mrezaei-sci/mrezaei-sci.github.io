@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+
+  <title>Work — Mohammad Rezaei</title>
+  <meta name="description" content="Selected projects in neuroimaging, deep learning, signal processing, and computational neuroscience." />
+
+  <link rel="canonical" href="https://mrezaei-sci.github.io/work.html" />
+  <meta property="og:title" content="Work — Mohammad Rezaei" />
+  <meta property="og:description" content="Selected projects in neuroimaging, deep learning, signal processing, and computational neuroscience." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mrezaei-sci.github.io/work.html" />
+  <meta property="og:image" content="https://mrezaei-sci.github.io/assets/img/og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/img/og.jpg" />
+  <link rel="stylesheet" href="assets/css/site.css" />
+  <script defer src="assets/js/data.js"></script>
+  <script defer src="assets/js/site.js"></script>
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip</a>
+
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="index.html"><span class="brand__dot"></span><span class="brand__text">Mohammad Rezaei</span></a>
+      <nav class="nav" id="nav">
+        <a class="nav__link" href="index.html">Home</a>
+        <a class="nav__link" href="research.html">Research</a>
+        <a class="nav__link is-active" href="work.html">Work</a>
+        <a class="nav__link" href="publications.html">Publications</a>
+        <a class="nav__link" href="contact.html">Contact</a>
+        <a class="nav__cta" href="Mohammad_Rezaei_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+      </nav>
+      <div class="topbar__actions">
+        <button class="iconbtn" id="themeToggle" type="button" aria-label="Toggle theme"><span class="iconbtn__icon">◐</span></button>
+        <button class="iconbtn" id="menuToggle" type="button" aria-label="Open menu"><span class="iconbtn__icon">≡</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="pagehero">
+      <p class="kicker">Work</p>
+      <h1 class="headline">Selected projects & case studies</h1>
+      <p class="subhead">
+        Curated work from neuroimaging, deep learning, signal processing, and computational neuroscience.
+        Filter by theme.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="filters" id="projectFilters"></div>
+      <div id="projectGrid" class="cards cards--2"></div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="modal" aria-hidden="true">
+      <div class="modal__backdrop" data-close></div>
+      <div class="modal__panel" role="dialog" aria-modal="true" aria-label="Project details">
+        <button class="modal__close" type="button" data-close aria-label="Close">×</button>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p class="footer__tiny">© <span id="year"></span> · Mohammad Rezaei</p>
+    </footer>
+  </main>
+</body>
+</html>
