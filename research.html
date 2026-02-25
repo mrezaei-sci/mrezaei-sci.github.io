@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+
+  <title>Research — Mohammad Rezaei</title>
+  <meta name="description" content="Research themes: directed brain networks, deep morphometry biomarkers, mechanism-to-behavior links." />
+
+  <link rel="canonical" href="https://mrezaei-sci.github.io/research.html" />
+  <meta property="og:title" content="Research — Mohammad Rezaei" />
+  <meta property="og:description" content="Directed brain networks, deep morphometry biomarkers, and mechanism-to-behavior neuroscience." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mrezaei-sci.github.io/research.html" />
+  <meta property="og:image" content="https://mrezaei-sci.github.io/assets/img/og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/img/og.jpg" />
+  <link rel="stylesheet" href="assets/css/site.css" />
+  <script defer src="assets/js/data.js"></script>
+  <script defer src="assets/js/site.js"></script>
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip</a>
+
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="index.html"><span class="brand__dot"></span><span class="brand__text">Mohammad Rezaei</span></a>
+      <nav class="nav" id="nav">
+        <a class="nav__link" href="index.html">Home</a>
+        <a class="nav__link is-active" href="research.html">Research</a>
+        <a class="nav__link" href="work.html">Work</a>
+        <a class="nav__link" href="publications.html">Publications</a>
+        <a class="nav__link" href="contact.html">Contact</a>
+        <a class="nav__cta" href="Mohammad_Rezaei_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+      </nav>
+      <div class="topbar__actions">
+        <button class="iconbtn" id="themeToggle" type="button" aria-label="Toggle theme"><span class="iconbtn__icon">◐</span></button>
+        <button class="iconbtn" id="menuToggle" type="button" aria-label="Open menu"><span class="iconbtn__icon">≡</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="pagehero">
+      <p class="kicker">Research</p>
+      <h1 class="headline">From signals to systems: networks, inference, and behavior.</h1>
+      <p class="subhead">
+        I care about one thing: building pipelines that are both <strong>mechanistically meaningful</strong>
+        and <strong>statistically trustworthy</strong>.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="cards cards--2">
+        <article class="card reveal">
+          <h2 class="h2">1) Directed networks (rs-fMRI / task-fMRI)</h2>
+          <p>
+            I work on time-lagged dependency estimation for brain connectivity,
+            extracting sparse backbones and controlling false positives via permutation-based procedures.
+          </p>
+          <div class="tags">
+            <span class="tag">Time-lag</span><span class="tag">FWER</span><span class="tag">Sparse graphs</span>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <h2 class="h2">2) Deep morphometry biomarkers (T1 MRI)</h2>
+          <p>
+            Structural biomarkers using voxel-based morphometry (VBM/CAT12) paired with deep learning,
+            targeting early neurodegeneration signals.
+          </p>
+          <div class="tags">
+            <span class="tag">VBM</span><span class="tag">CNN</span><span class="tag">Interpretability</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__head">
+        <h2>Method stack</h2>
+        <p class="muted">Tools I actually use (kept short, not a CV dump).</p>
+      </div>
+
+      <div class="cards cards--3">
+        <article class="card reveal">
+          <h3>Neuroimaging</h3>
+          <p class="muted">SPM12 · FSL · FreeSurfer · CAT12 · fMRIPrep</p>
+        </article>
+        <article class="card reveal">
+          <h3>Compute</h3>
+          <p class="muted">Python · MATLAB · Linux · Git · LaTeX</p>
+        </article>
+        <article class="card reveal">
+          <h3>Statistics</h3>
+          <p class="muted">GLM/mixed effects · nonparametrics · reliability (ICC/α) · permutation inference</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__head">
+        <h2>Current thesis direction</h2>
+        <p class="muted">A plain-language version for busy PIs.</p>
+      </div>
+      <article class="card reveal">
+        <p>
+          My M.Sc. thesis studies how motor practice reorganizes cortico–subcortical loops and how that
+          reconfiguration maps onto <strong>distinct learning components</strong> (accuracy vs speed/vigor).
+          I’m interested in directed connectivity as a mechanistic lens — and in inference workflows that
+          remain stable under high-dimensional multiple testing.
+        </p>
+        <div class="section__foot">
+          <a class="btn btn--primary" href="work.html">See projects</a>
+          <a class="btn" href="publications.html">See manuscripts</a>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <p class="footer__tiny">© <span id="year"></span> · Mohammad Rezaei</p>
+    </footer>
+  </main>
+</body>
+</html>
