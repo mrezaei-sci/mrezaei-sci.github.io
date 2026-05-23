@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="color-scheme" content="light dark" />
 
-  <title>Mohammad Rezaei — Neuroimaging × Deep Learning × Brain Networks</title>
-  <meta name="description" content="Mohammad Rezaei. Neuroimaging (fMRI), brain networks, effective connectivity, and deep learning for clinical + performance neuroscience." />
+  <title>Mohammad Rezaei — Biomedical AI × Human Movement × Brain Networks</title>
+  <meta name="description" content="Mohammad Rezaei. Biomedical AI, human movement analysis, neuroimaging, brain networks, biosignal processing, and interpretable deep learning for rehabilitation and performance neuroscience." />
 
-  <!-- Canonical / OG (update if you later add a custom domain) -->
+  <!-- Canonical / OG -->
   <link rel="canonical" href="https://mrezaei-sci.github.io/" />
-  <meta property="og:title" content="Mohammad Rezaei — Neuroimaging × Deep Learning × Brain Networks" />
-  <meta property="og:description" content="fMRI brain networks, effective connectivity, and deep learning for clinical + performance neuroscience. M.Sc. Student." />
+  <meta property="og:title" content="Mohammad Rezaei — Biomedical AI × Human Movement × Brain Networks" />
+  <meta property="og:description" content="Biomedical AI, human movement analysis, fMRI brain networks, biosignal processing, and interpretable deep learning for rehabilitation and performance neuroscience." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mrezaei-sci.github.io/" />
   <meta property="og:image" content="https://mrezaei-sci.github.io/assets/img/og.jpg" />
@@ -21,6 +21,36 @@
   <link rel="stylesheet" href="assets/css/site.css" />
   <script defer src="assets/js/data.js"></script>
   <script defer src="assets/js/site.js"></script>
+
+  <!-- Structured profile metadata for search engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mohammad Rezaei",
+    "url": "https://mrezaei-sci.github.io/",
+    "email": "mailto:moh.rezaei@ut.ac.ir",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Tehran"
+    },
+    "sameAs": [
+      "https://github.com/mrezaei-sci",
+      "https://www.linkedin.com/in/mohammad-rezaei-rze2001",
+      "https://www.youtube.com/@MoScientific"
+    ],
+    "knowsAbout": [
+      "Biomedical AI",
+      "Human movement analysis",
+      "Neuroimaging",
+      "Brain networks",
+      "Biosignal processing",
+      "Deep learning",
+      "Rehabilitation engineering",
+      "Performance neuroscience"
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -34,13 +64,13 @@
         <span class="brand__text">Mohammad Rezaei</span>
       </a>
 
-      <nav class="nav" id="nav">
+      <nav class="nav" id="nav" aria-label="Main navigation">
         <a class="nav__link is-active" href="index.html">Home</a>
         <a class="nav__link" href="research.html">Research</a>
         <a class="nav__link" href="work.html">Work</a>
         <a class="nav__link" href="publications.html">Publications</a>
         <a class="nav__link" href="contact.html">Contact</a>
-        <a class="nav__cta" href="Mohammad Rezaei_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+        <a class="nav__cta" href="Mohammad_Rezaei_CV.pdf" target="_blank" rel="noopener">Download CV</a>
       </nav>
 
       <div class="topbar__actions">
@@ -59,15 +89,16 @@
     <section class="hero">
       <div class="hero__grid">
         <div class="hero__left">
-          <p class="kicker">M.Sc. Student · Neuroimaging + ML</p>
+          <p class="kicker">M.Sc. Student · Biomedical AI · Human Movement</p>
           <h1 class="headline">
-            I build <span class="glow">brain-network</span> pipelines that connect
-            <span class="glow2">mechanism</span> to <span class="glow">behavior</span>.
+            I build <span class="glow">interpretable AI</span> pipelines that connect
+            <span class="glow2">signals</span>, <span class="glow">movement</span>, and brain networks.
           </h1>
           <p class="subhead">
-            My work sits at the intersection of <strong>resting/task fMRI</strong>,
-            <strong>effective/directed connectivity</strong>, and <strong>deep learning</strong>
-            and aiming for clinically useful biomarkers and performance-relevant neuroscience.
+            My work sits at the intersection of <strong>human movement analysis</strong>,
+            <strong>biosignal processing</strong>, <strong>task/resting-state fMRI</strong>,
+            and <strong>deep learning</strong>, with the goal of building useful tools for
+            rehabilitation, motor learning, clinical neuroscience, and performance assessment.
           </p>
 
           <div class="hero__buttons">
@@ -79,7 +110,7 @@
           <div class="hero__meta">
             <div class="meta">
               <span class="meta__k">Focus</span>
-              <span class="meta__v">fMRI · Brain networks · DL</span>
+              <span class="meta__v">Movement AI · fMRI · EEG/EMG</span>
             </div>
             <div class="meta">
               <span class="meta__k">Based</span>
@@ -104,110 +135,233 @@
             <div class="portrait__card">
               <p class="portrait__title">Now</p>
               <p class="portrait__text">
-                M.Sc. Biomedical Engineering (Sport Engineering track), University of Tehran.
-                Thesis: cortical–subcortical contributions to accuracy–speed networks after motor task learning.
+                M.Sc. Biomedical Engineering, Sports Engineering specialization, University of Tehran.
+                Thesis: whole-brain resting-state fMRI analysis of cortical-subcortical network contributions
+                to accuracy and speed after motor task learning.
               </p>
               <div class="chips">
                 <span class="chip">rs-fMRI</span>
-                <span class="chip">Directed connectivity</span>
-                <span class="chip">Permutation inference</span>
+                <span class="chip">Human movement</span>
+                <span class="chip">Deep learning</span>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- “Real website” feel: subtle marquee -->
+      <!-- Subtle marquee -->
       <div class="marquee" aria-hidden="true">
         <div class="marquee__track">
+          <span>Human movement analysis</span><span>·</span>
+          <span>RGB-D skeleton data</span><span>·</span>
+          <span>Biosignal processing</span><span>·</span>
           <span>Network neuroscience</span><span>·</span>
-          <span>Effective connectivity</span><span>·</span>
-          <span>Deep morphometry</span><span>·</span>
-          <span>Computational models</span><span>·</span>
-          <span>Reproducible pipelines</span><span>·</span>
+          <span>Deep learning</span><span>·</span>
+          <span>Rehabilitation AI</span><span>·</span>
           <span>Performance neuroscience</span><span>·</span>
+          <span>Human movement analysis</span><span>·</span>
+          <span>RGB-D skeleton data</span><span>·</span>
+          <span>Biosignal processing</span><span>·</span>
           <span>Network neuroscience</span><span>·</span>
-          <span>Effective connectivity</span><span>·</span>
-          <span>Deep morphometry</span><span>·</span>
-          <span>Computational models</span><span>·</span>
-          <span>Reproducible pipelines</span><span>·</span>
+          <span>Deep learning</span><span>·</span>
+          <span>Rehabilitation AI</span><span>·</span>
           <span>Performance neuroscience</span>
         </div>
       </div>
     </section>
 
-    <!-- WHAT I DO (curated, not CV) -->
+    <!-- WHAT I DO -->
     <section class="section">
       <div class="section__head">
         <h2>What I build</h2>
-        <p class="muted">Three tracks that summarize my work (details on the Research page).</p>
+        <p class="muted">Three tracks that summarize my current research direction.</p>
       </div>
 
       <div class="cards cards--3">
         <article class="card reveal">
-          <h3>Directed brain networks</h3>
+          <h3>Human movement assessment</h3>
           <p>
-            Time-lagged dependency estimation and principled error control for sparse network backbones.
+            Pose-based and skeleton-sequence pipelines for movement-quality assessment,
+            rehabilitation feedback, and sport-performance analysis.
           </p>
           <div class="tags">
-            <span class="tag">rs-fMRI</span><span class="tag">FWER</span><span class="tag">Lag-aware</span>
+            <span class="tag">RGB-D</span><span class="tag">TCN</span><span class="tag">Grad-CAM</span>
           </div>
         </article>
 
         <article class="card reveal">
-          <h3>Deep morphometry biomarkers</h3>
+          <h3>Biosignal processing</h3>
           <p>
-            Structural MRI pipelines combining voxel-based morphometry with deep learning for early disease signals.
+            EEG/EMG-oriented signal-processing workflows for human state estimation,
+            decision-making under pressure, fatigue, and engagement-related analysis.
           </p>
           <div class="tags">
-            <span class="tag">VBM/CAT12</span><span class="tag">CNN</span><span class="tag">Explainability</span>
+            <span class="tag">EEG</span><span class="tag">EMG</span><span class="tag">Entropy</span>
           </div>
         </article>
 
         <article class="card reveal">
-          <h3>Mechanism → behavior</h3>
+          <h3>Brain-network neuroscience</h3>
           <p>
-            Linking network reconfiguration to kinematics, decision quality, and skill acquisition.
+            fMRI connectivity and network-analysis pipelines linking brain reconfiguration
+            to behavior, skill learning, and clinical/performance outcomes.
           </p>
           <div class="tags">
-            <span class="tag">Motor learning</span><span class="tag">Creativity</span><span class="tag">Task-fMRI</span>
+            <span class="tag">fMRI</span><span class="tag">Connectivity</span><span class="tag">Permutation inference</span>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- FEATURED WORK (auto from data.js) -->
+    <!-- FEATURED WORK -->
     <section class="section">
       <div class="section__head">
         <h2>Featured work</h2>
-        <p class="muted">Curated case-studies (not a full CV list).</p>
+        <p class="muted">Curated case studies that best represent my current research profile.</p>
       </div>
 
-      <div id="featuredGrid" class="cards cards--2"></div>
+      <div id="featuredGrid" class="cards cards--2">
+        <article class="card reveal">
+          <p class="kicker">Rehabilitation AI · Computer vision</p>
+          <h3>Interpretable skeleton-based deep learning for squat-quality assessment</h3>
+          <p>
+            Built an end-to-end movement-assessment pipeline using KIMORE 3D skeleton time series,
+            temporal alignment, body-centered normalization, bone-direction features, motion derivatives,
+            CNN-BiLSTM/TCN models, and Grad-CAM-style explanations for rehabilitation feedback.
+          </p>
+          <div class="tags">
+            <span class="tag">KIMORE</span>
+            <span class="tag">RGB-D skeletons</span>
+            <span class="tag">Movement assessment</span>
+            <span class="tag">Explainable AI</span>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <p class="kicker">NeuroImage · Task-fMRI</p>
+          <h3>Neural efficiency in creative decision-making</h3>
+          <p>
+            Studied creative soccer decision-making using task-fMRI and directed network analysis,
+            identifying a sparse decision-related subnetwork associated with neural efficiency in expert players.
+          </p>
+          <div class="tags">
+            <span class="tag">Task-fMRI</span>
+            <span class="tag">Soccer experts</span>
+            <span class="tag">Directed networks</span>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <p class="kicker">NeuroImage: Reports · MRI + deep learning</p>
+          <h3>Early Alzheimer's diagnosis with VBM and deep learning</h3>
+          <p>
+            Integrated structural MRI biomarkers with voxel-based morphometry and deep learning,
+            converting biologically meaningful measures into multi-bit heatmap representations
+            for interpretable disease classification.
+          </p>
+          <div class="tags">
+            <span class="tag">VBM</span>
+            <span class="tag">ADNI</span>
+            <span class="tag">CNN/FCN</span>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <p class="kicker">Under review · Motor learning</p>
+          <h3>Cortical-subcortical network reconfiguration after motor learning</h3>
+          <p>
+            Investigating how resting-state fMRI networks reorganize after motor task learning,
+            with emphasis on accuracy-speed outcomes and cortical-subcortical contributions.
+          </p>
+          <div class="tags">
+            <span class="tag">rs-fMRI</span>
+            <span class="tag">Motor learning</span>
+            <span class="tag">Network neuroscience</span>
+          </div>
+        </article>
+      </div>
 
       <div class="section__foot">
         <a class="btn" href="work.html">See all projects</a>
       </div>
     </section>
 
-    <!-- SELECTED PUBLICATIONS (curated) -->
+    <!-- SELECTED PUBLICATIONS -->
     <section class="section">
       <div class="section__head">
         <h2>Selected publications</h2>
-        <p class="muted">A few highlights — full list on Publications page.</p>
+        <p class="muted">Highlights from published, under-review, and conference work.</p>
       </div>
-      <div id="pubHighlights" class="stack"></div>
+
+      <div id="pubHighlights" class="stack">
+        <article class="card reveal">
+          <p class="kicker">Peer-reviewed journal article</p>
+          <h3>Neural efficiency in creative decision-making: A sparse directed subnetwork in soccer experts revealed by fMRI</h3>
+          <p>
+            <strong>Rezaei, M.</strong>, Zarei, A., &amp; Talesh Jafadideh, A.
+            <em>NeuroImage</em>, 334, 121961. 2026.
+            DOI: <a href="https://doi.org/10.1016/j.neuroimage.2026.121961" target="_blank" rel="noopener">10.1016/j.neuroimage.2026.121961</a>
+          </p>
+        </article>
+
+        <article class="card reveal">
+          <p class="kicker">Peer-reviewed journal article</p>
+          <h3>Early diagnosis of Alzheimer's disease based on brain morphological changes: A comprehensive approach combining voxel-based morphometry and deep learning</h3>
+          <p>
+            <strong>Rezaei, M.</strong>, Mohammadikhaveh, S., Faraji, H., Ardalani, R., Rezaei, M., &amp; Shirazinodeh, A.
+            <em>NeuroImage: Reports</em>, 6(1), 100315. 2026.
+            DOI: <a href="https://doi.org/10.1016/j.ynirp.2025.100315" target="_blank" rel="noopener">10.1016/j.ynirp.2025.100315</a>
+          </p>
+        </article>
+
+        <article class="card reveal">
+          <p class="kicker">Under review</p>
+          <h3>Distinct cortical-subcortical contributions underlying accuracy-speed networks following motor task learning: A resting-state fMRI study</h3>
+          <p>
+            <strong>Rezaei, M.</strong>, Bahrami, F., Tahmasebi Boroujeni, S., &amp; Talesh Jafadideh, A.
+            <em>Scientific Reports</em>. Status: under review.
+          </p>
+        </article>
+
+        <article class="card reveal">
+          <p class="kicker">Under review</p>
+          <h3>Integrated Information Decomposition reveals redundancy-related hemispheric asymmetry during negative REM dreams</h3>
+          <p>
+            <strong>Rezaei, M.</strong> &amp; Talesh Jafadideh, A.
+            <em>SLEEP</em>. Status: under review.
+          </p>
+        </article>
+
+        <article class="card reveal">
+          <p class="kicker">Under review</p>
+          <h3>Frontal spectral entropy tracks pressure-induced decision-making failure in youth soccer</h3>
+          <p>
+            <strong>Rezaei, M.</strong>, Talesh Jafadideh, A., &amp; Bohloul, A.
+            <em>Scientific Reports</em>. Status: under review.
+          </p>
+        </article>
+
+        <article class="card reveal">
+          <p class="kicker">Peer-reviewed conference paper</p>
+          <h3>Interpretable skeleton-based deep learning for automated squat quality assessment in rehabilitation</h3>
+          <p>
+            <strong>Rezaei, M.</strong>, Mohammadikhaveh, S., Zarei, M., &amp; Amiri, H.
+            34th International Conference on Electrical Engineering (ICEE), IEEE. 2026.
+          </p>
+        </article>
+      </div>
+
       <div class="section__foot">
         <a class="btn" href="publications.html">View all publications</a>
       </div>
     </section>
 
-    <!-- REPOS (GitHub API) -->
+    <!-- REPOS -->
     <section class="section">
       <div class="section__head">
         <h2>Code</h2>
         <p class="muted">
-          Auto-loaded from GitHub (public repos). If you want “pinned” projects, we can hard-pin manually.
+          Auto-loaded from GitHub public repositories. Selected research code can also be linked manually when available.
         </p>
       </div>
       <div id="repoGrid" class="cards cards--3"></div>
@@ -226,14 +380,18 @@
       <div class="cards cards--2">
         <article class="card reveal">
           <h3>YouTube</h3>
-          <p>Short, practical content: fMRI preprocessing/QC, GLM, visualization, and research tips.</p>
+          <p>
+            Short, practical content on fMRI preprocessing/QC, GLM analysis, visualization,
+            and research workflow notes for students and early-stage researchers.
+          </p>
           <a class="btn btn--primary" href="https://www.youtube.com/@MoScientific" target="_blank" rel="noopener">Visit channel</a>
         </article>
 
         <article class="card reveal">
-          <h3>Want a 1-page research statement?</h3>
+          <h3>Research statement</h3>
           <p>
-            I can add a “Research Statement” page with a clean narrative + figures (not CV bullets) for PhD PI’s.
+            I am interested in PhD research that connects biomedical AI, human movement analysis,
+            biosignal processing, rehabilitation engineering, and network neuroscience.
           </p>
           <a class="btn" href="contact.html">Message me</a>
         </article>
@@ -244,7 +402,7 @@
       <div class="footer__grid">
         <div>
           <p class="footer__brand">Mohammad Rezaei</p>
-          <p class="muted">Neuroimaging · Brain networks · Deep learning</p>
+          <p class="muted">Biomedical AI · Human movement · Brain networks</p>
         </div>
         <div class="footer__links">
           <a href="research.html">Research</a>
