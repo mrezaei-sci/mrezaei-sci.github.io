@@ -219,7 +219,7 @@
         <p class="muted">Curated case studies that best represent my current research profile.</p>
       </div>
 
-      <div id="featuredGrid" class="cards cards--2">
+      <div class="cards cards--2">
         <article class="card reveal">
           <p class="kicker">Rehabilitation AI · Computer vision</p>
           <h3>Interpretable skeleton-based deep learning for squat-quality assessment</h3>
@@ -292,7 +292,7 @@
         <p class="muted">Highlights from published, under-review, and conference work.</p>
       </div>
 
-      <div id="pubHighlights" class="stack">
+      <div class="stack">
         <article class="card reveal">
           <p class="kicker">Peer-reviewed journal article</p>
           <h3>Neural efficiency in creative decision-making: A sparse directed subnetwork in soccer experts revealed by fMRI</h3>
@@ -355,19 +355,60 @@
       </div>
     </section>
 
-    <!-- REPOS -->
-    <section class="section">
-      <div class="section__head">
-        <h2>Code</h2>
-        <p class="muted">
-          Auto-loaded from GitHub public repositories. Selected research code can also be linked manually when available.
-        </p>
+    <!-- CODE -->
+<section class="section">
+  <div class="section__head">
+    <h2>Code</h2>
+    <p class="muted">
+      Selected public code and research workflows. More repositories are available on GitHub.
+    </p>
+  </div>
+
+  <div class="cards cards--3">
+    <article class="card reveal">
+      <h3>Neuroimaging workflows</h3>
+      <p>
+        MATLAB, Python, and SPM/FSL-based scripts for fMRI preprocessing, connectivity analysis,
+        statistical inference, and publication-ready visualization.
+      </p>
+      <div class="tags">
+        <span class="tag">fMRI</span>
+        <span class="tag">MATLAB</span>
+        <span class="tag">Python</span>
       </div>
-      <div id="repoGrid" class="cards cards--3"></div>
-      <div class="section__foot">
-        <a class="btn" href="https://github.com/mrezaei-sci" target="_blank" rel="noopener">Open GitHub</a>
+    </article>
+
+    <article class="card reveal">
+      <h3>Human movement analysis</h3>
+      <p>
+        Skeleton-sequence and deep learning pipelines for movement-quality assessment,
+        temporal modeling, and explainable rehabilitation feedback.
+      </p>
+      <div class="tags">
+        <span class="tag">KIMORE</span>
+        <span class="tag">TCN</span>
+        <span class="tag">Grad-CAM</span>
       </div>
-    </section>
+    </article>
+
+    <article class="card reveal">
+      <h3>Biosignal analysis</h3>
+      <p>
+        EEG/EMG-oriented analysis workflows for filtering, entropy features, time-frequency analysis,
+        and human-state interpretation.
+      </p>
+      <div class="tags">
+        <span class="tag">EEG</span>
+        <span class="tag">EMG</span>
+        <span class="tag">Entropy</span>
+      </div>
+    </article>
+  </div>
+
+  <div class="section__foot">
+    <a class="btn" href="https://github.com/mrezaei-sci" target="_blank" rel="noopener">Open GitHub</a>
+  </div>
+</section>
 
     <!-- MEDIA -->
     <section class="section">
