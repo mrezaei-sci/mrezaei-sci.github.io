@@ -6,11 +6,11 @@
   <meta name="color-scheme" content="light dark" />
 
   <title>Research — Mohammad Rezaei</title>
-  <meta name="description" content="Research themes: directed brain networks, deep morphometry biomarkers, mechanism-to-behavior links." />
+  <meta name="description" content="Research themes: human movement analysis, biosignal processing, rehabilitation AI, brain networks, neuroimaging, and biomedical deep learning." />
 
   <link rel="canonical" href="https://mrezaei-sci.github.io/research.html" />
   <meta property="og:title" content="Research — Mohammad Rezaei" />
-  <meta property="og:description" content="Directed brain networks, deep morphometry biomarkers, and mechanism-to-behavior neuroscience." />
+  <meta property="og:description" content="Human movement analysis, biosignal processing, rehabilitation AI, brain networks, neuroimaging, and biomedical deep learning." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mrezaei-sci.github.io/research.html" />
   <meta property="og:image" content="https://mrezaei-sci.github.io/assets/img/og.jpg" />
@@ -18,7 +18,6 @@
 
   <link rel="icon" href="assets/img/og.jpg" />
   <link rel="stylesheet" href="assets/css/site.css" />
-  <script defer src="assets/js/data.js"></script>
   <script defer src="assets/js/site.js"></script>
 </head>
 
@@ -27,8 +26,12 @@
 
   <header class="topbar">
     <div class="wrap topbar__inner">
-      <a class="brand" href="index.html"><span class="brand__dot"></span><span class="brand__text">Mohammad Rezaei</span></a>
-      <nav class="nav" id="nav">
+      <a class="brand" href="index.html">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__text">Mohammad Rezaei</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main navigation">
         <a class="nav__link" href="index.html">Home</a>
         <a class="nav__link is-active" href="research.html">Research</a>
         <a class="nav__link" href="work.html">Work</a>
@@ -36,9 +39,14 @@
         <a class="nav__link" href="contact.html">Contact</a>
         <a class="nav__cta" href="Mohammad_Rezaei_CV.pdf" target="_blank" rel="noopener">Download CV</a>
       </nav>
+
       <div class="topbar__actions">
-        <button class="iconbtn" id="themeToggle" type="button" aria-label="Toggle theme"><span class="iconbtn__icon">◐</span></button>
-        <button class="iconbtn" id="menuToggle" type="button" aria-label="Open menu"><span class="iconbtn__icon">≡</span></button>
+        <button class="iconbtn" id="themeToggle" type="button" aria-label="Toggle theme">
+          <span class="iconbtn__icon" aria-hidden="true">◐</span>
+        </button>
+        <button class="iconbtn" id="menuToggle" type="button" aria-label="Open menu">
+          <span class="iconbtn__icon" aria-hidden="true">≡</span>
+        </button>
       </div>
     </div>
   </header>
@@ -46,82 +54,264 @@
   <main id="main" class="wrap">
     <section class="pagehero">
       <p class="kicker">Research</p>
-      <h1 class="headline">From signals to systems: networks, inference, and behavior.</h1>
+      <h1 class="headline">From movement and biosignals to brain networks and interpretable AI.</h1>
       <p class="subhead">
-        I care about one thing: building pipelines that are both <strong>mechanistically meaningful</strong>
-        and <strong>statistically trustworthy</strong>.
+        I build research pipelines that connect <strong>human movement</strong>,
+        <strong>brain and physiological signals</strong>, and <strong>machine learning</strong>
+        to clinically and behaviorally meaningful outcomes.
       </p>
     </section>
 
+    <!-- RESEARCH THEMES -->
     <section class="section">
+      <div class="section__head">
+        <h2>Research themes</h2>
+        <p class="muted">
+          My work combines biomedical engineering, AI, neuroimaging, and human performance analysis.
+        </p>
+      </div>
+
       <div class="cards cards--2">
         <article class="card reveal">
-          <h2 class="h2">1) Directed networks (rs-fMRI / task-fMRI)</h2>
+          <h2 class="h2">1) Human movement analysis and rehabilitation AI</h2>
           <p>
-            I work on time-lagged dependency estimation for brain connectivity,
-            extracting sparse backbones and controlling false positives via permutation-based procedures.
+            I work on movement-quality assessment using 3D skeleton time series, RGB-D skeletal data,
+            temporal deep learning, and interpretable feedback. My recent work used KIMORE squat
+            recordings to classify movement quality and identify the movement phases that most influenced
+            the model decision.
           </p>
           <div class="tags">
-            <span class="tag">Time-lag</span><span class="tag">FWER</span><span class="tag">Sparse graphs</span>
+            <span class="tag">RGB-D skeletons</span>
+            <span class="tag">Movement assessment</span>
+            <span class="tag">TCN</span>
+            <span class="tag">Grad-CAM</span>
           </div>
         </article>
 
         <article class="card reveal">
-          <h2 class="h2">2) Deep morphometry biomarkers (T1 MRI)</h2>
+          <h2 class="h2">2) Biosignal processing and human state estimation</h2>
           <p>
-            Structural biomarkers using voxel-based morphometry (VBM/CAT12) paired with deep learning,
-            targeting early neurodegeneration signals.
+            I am interested in EEG, EMG, and physiological signal analysis for understanding attention,
+            fatigue, pressure, engagement, and learning. This direction is especially important for
+            human-in-the-loop systems, rehabilitation feedback, and adaptive training technologies.
           </p>
           <div class="tags">
-            <span class="tag">VBM</span><span class="tag">CNN</span><span class="tag">Interpretability</span>
+            <span class="tag">EEG</span>
+            <span class="tag">EMG</span>
+            <span class="tag">Spectral entropy</span>
+            <span class="tag">Human state</span>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <h2 class="h2">3) Brain networks in learning and decision-making</h2>
+          <p>
+            I use task and resting-state fMRI to study how brain networks support motor learning,
+            decision-making, and performance. My focus is on connectivity patterns that link neural
+            organization to measurable behavior such as accuracy, speed, and decision quality.
+          </p>
+          <div class="tags">
+            <span class="tag">Task-fMRI</span>
+            <span class="tag">rs-fMRI</span>
+            <span class="tag">Brain networks</span>
+            <span class="tag">Motor learning</span>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <h2 class="h2">4) Deep morphometry biomarkers</h2>
+          <p>
+            I also work on structural MRI and biomarker-guided deep learning. In my Alzheimer’s disease
+            project, I integrated voxel-based morphometry, cortical thickness, WMH, and other MRI-derived
+            measures with CNN/FCN models to support interpretable disease classification.
+          </p>
+          <div class="tags">
+            <span class="tag">VBM</span>
+            <span class="tag">CAT12/SPM12</span>
+            <span class="tag">CNN/FCN</span>
+            <span class="tag">Alzheimer's disease</span>
           </div>
         </article>
       </div>
     </section>
 
+    <!-- METHOD STACK -->
     <section class="section">
       <div class="section__head">
         <h2>Method stack</h2>
-        <p class="muted">Tools I actually use (kept short, not a CV dump).</p>
+        <p class="muted">Tools and methods I use across projects.</p>
       </div>
 
       <div class="cards cards--3">
         <article class="card reveal">
+          <h3>Movement and vision</h3>
+          <p class="muted">
+            3D skeleton time series · RGB-D systems · pose-based features · temporal alignment ·
+            bone-vector representation · movement-quality classification
+          </p>
+        </article>
+
+        <article class="card reveal">
+          <h3>Biosignals</h3>
+          <p class="muted">
+            EEG/EMG preprocessing · filtering · re-referencing · time-frequency analysis ·
+            spectral entropy · artifact correction · physiological interpretation
+          </p>
+        </article>
+
+        <article class="card reveal">
           <h3>Neuroimaging</h3>
-          <p class="muted">SPM12 · FSL · FreeSurfer · CAT12 · fMRIPrep</p>
+          <p class="muted">
+            SPM12 · FSL · FreeSurfer · CAT12 · fMRIPrep · task-fMRI GLM · resting-state analysis ·
+            structural MRI biomarkers
+          </p>
         </article>
+
         <article class="card reveal">
-          <h3>Compute</h3>
-          <p class="muted">Python · MATLAB · Linux · Git · LaTeX</p>
+          <h3>Machine learning</h3>
+          <p class="muted">
+            CNN · FCN · TCN · CNN-BiLSTM · PyTorch/TensorFlow · model calibration ·
+            ablation analysis · explainable AI
+          </p>
         </article>
+
         <article class="card reveal">
-          <h3>Statistics</h3>
-          <p class="muted">GLM/mixed effects · nonparametrics · reliability (ICC/α) · permutation inference</p>
+          <h3>Statistics and inference</h3>
+          <p class="muted">
+            GLM · mixed-effects models · permutation testing · FDR/FWE correction ·
+            bootstrap confidence intervals · effect-size reporting
+          </p>
+        </article>
+
+        <article class="card reveal">
+          <h3>Reproducible research</h3>
+          <p class="muted">
+            Python · MATLAB · R · Git/GitHub · Linux · LaTeX · organized pipelines ·
+            publication-ready figures and reports
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CURRENT DIRECTIONS -->
+    <section class="section">
+      <div class="section__head">
+        <h2>Current directions</h2>
+        <p class="muted">A plain-language version for busy PIs and collaborators.</p>
+      </div>
+
+      <div class="cards cards--2">
+        <article class="card reveal">
+          <h3>Motor learning and brain-network reconfiguration</h3>
+          <p>
+            My M.Sc. thesis studies how motor practice reorganizes cortical and subcortical brain networks,
+            and how this reconfiguration relates to different learning components such as accuracy and speed.
+            I am interested in connectivity methods that remain interpretable and statistically reliable in
+            high-dimensional neuroimaging data.
+          </p>
+          <div class="tags">
+            <span class="tag">M.Sc. thesis</span>
+            <span class="tag">Motor learning</span>
+            <span class="tag">Accuracy-speed networks</span>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <h3>AI for personalized rehabilitation and training</h3>
+          <p>
+            A major goal of my future work is to combine movement analysis, biosignals, and machine learning
+            to build systems that assess human performance and provide meaningful feedback. I am especially
+            interested in rehabilitation engineering, adaptive training, human-in-the-loop systems, and
+            interpretable AI.
+          </p>
+          <div class="tags">
+            <span class="tag">Rehabilitation AI</span>
+            <span class="tag">Human-in-the-loop</span>
+            <span class="tag">Adaptive feedback</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SELECTED OUTPUTS -->
+    <section class="section">
+      <div class="section__head">
+        <h2>Selected outputs</h2>
+        <p class="muted">A few representative examples connected to my research themes.</p>
+      </div>
+
+      <div class="stack">
+        <article class="card reveal">
+          <p class="kicker">Published · NeuroImage</p>
+          <h3>Neural efficiency in creative decision-making</h3>
+          <p>
+            A task-fMRI study of creative decision-making in soccer experts, focused on sparse
+            directed brain-network patterns and neural efficiency during performance-relevant decisions.
+          </p>
+          <a class="btn" href="publications.html">See publication</a>
+        </article>
+
+        <article class="card reveal">
+          <p class="kicker">Published · NeuroImage: Reports</p>
+          <h3>Early Alzheimer’s diagnosis using VBM and deep learning</h3>
+          <p>
+            A structural MRI and deep learning project combining biologically meaningful morphometry
+            biomarkers with CNN/FCN models for interpretable disease classification.
+          </p>
+          <a class="btn" href="publications.html">See publication</a>
+        </article>
+
+        <article class="card reveal">
+          <p class="kicker">Conference · IEEE ICEE</p>
+          <h3>Interpretable skeleton-based squat-quality assessment</h3>
+          <p>
+            A rehabilitation-oriented human movement analysis project using 3D skeleton data,
+            temporal deep learning, and Grad-CAM-style temporal explanations.
+          </p>
+          <a class="btn" href="publications.html">See conference paper</a>
         </article>
       </div>
     </section>
 
     <section class="section">
-      <div class="section__head">
-        <h2>Current thesis direction</h2>
-        <p class="muted">A plain-language version for busy PIs.</p>
-      </div>
       <article class="card reveal">
+        <h2 class="h2">Research goal</h2>
         <p>
-          My M.Sc. thesis studies how motor practice reorganizes cortico–subcortical loops and how that
-          reconfiguration maps onto <strong>distinct learning components</strong> (accuracy vs speed/vigor).
-          I’m interested in directed connectivity as a mechanistic lens — and in inference workflows that
-          remain stable under high-dimensional multiple testing.
+          I want to develop biomedical AI systems that are not only accurate, but also understandable
+          and useful in real settings. My goal is to connect movement, brain activity, physiological
+          signals, and machine learning into tools that can support rehabilitation, skill learning,
+          clinical assessment, and human performance.
         </p>
         <div class="section__foot">
           <a class="btn btn--primary" href="work.html">See projects</a>
-          <a class="btn" href="publications.html">See manuscripts</a>
+          <a class="btn" href="publications.html">See papers</a>
         </div>
       </article>
     </section>
 
     <footer class="footer">
-      <p class="footer__tiny">© <span id="year"></span> · Mohammad Rezaei</p>
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand">Mohammad Rezaei</p>
+          <p class="muted">Biomedical AI · Human movement · Brain networks</p>
+        </div>
+
+        <div class="footer__links">
+          <a href="index.html">Home</a>
+          <a href="work.html">Work</a>
+          <a href="publications.html">Publications</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer__links">
+          <a href="Mohammad_Rezaei_CV.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+          <a href="https://github.com/mrezaei-sci" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/mohammad-rezaei-rze2001" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.youtube.com/@MoScientific" target="_blank" rel="noopener">YouTube</a>
+        </div>
+      </div>
+
+      <p class="footer__tiny">© <span id="year"></span> · Built on GitHub Pages</p>
     </footer>
   </main>
 </body>
