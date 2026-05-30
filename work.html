@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Work — Mohammad Rezaei</title>
+  <meta name="description" content="Selected projects in brain networks, EEG signal processing, computational neuroscience, neuroimaging, interpretable deep learning, and movement analysis." />
+  <link rel="canonical" href="https://mrezaei-sci.github.io/work.html" />
+  <meta property="og:title" content="Work — Mohammad Rezaei" />
+  <meta property="og:description" content="Selected projects in brain networks, EEG, computational neuroscience, neuroimaging, and interpretable deep learning." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mrezaei-sci.github.io/work.html" />
+  <meta property="og:image" content="https://mrezaei-sci.github.io/assets/img/og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="assets/img/og.jpg" />
+  <link rel="stylesheet" href="assets/css/site.css" />
+  <script defer src="assets/js/site.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip</a>
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="index.html"><span class="brand__dot" aria-hidden="true"></span><span class="brand__text">Mohammad Rezaei</span></a>
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <a class="nav__link" href="index.html">Home</a>
+        <a class="nav__link" href="research.html">Research</a>
+        <a class="nav__link is-active" href="work.html">Work</a>
+        <a class="nav__link" href="publications.html">Publications</a>
+        <a class="nav__link" href="contact.html">Contact</a>
+        <a class="nav__cta" href="Mohammad_Rezaei_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+      </nav>
+      <div class="topbar__actions">
+        <button class="iconbtn" id="themeToggle" type="button" aria-label="Toggle theme"><span class="iconbtn__icon" aria-hidden="true">◐</span></button>
+        <button class="iconbtn" id="menuToggle" type="button" aria-label="Open menu"><span class="iconbtn__icon" aria-hidden="true">≡</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="pagehero">
+      <p class="kicker">Work</p>
+      <h1 class="headline">Selected projects &amp; case studies</h1>
+      <p class="subhead">Curated work across <strong>brain networks</strong>, <strong>EEG &amp; biosignals</strong>, <strong>computational neuroscience</strong>, <strong>neuroimaging</strong>, and <strong>interpretable deep learning</strong>.</p>
+    </section>
+
+    <section class="section">
+      <div class="filters" id="projectFilters" aria-label="Project filters">
+        <button class="btn btn--ghost is-active" type="button" data-filter="all">All</button>
+        <button class="btn btn--ghost" type="button" data-filter="neuroimaging">Neuroimaging</button>
+        <button class="btn btn--ghost" type="button" data-filter="biosignal">Biosignals</button>
+        <button class="btn btn--ghost" type="button" data-filter="computational">Computational</button>
+        <button class="btn btn--ghost" type="button" data-filter="clinical">Clinical AI</button>
+        <button class="btn btn--ghost" type="button" data-filter="movement">Movement AI</button>
+      </div>
+
+      <div class="cards cards--2" id="projectGrid">
+        <article class="card reveal" data-project-tags="neuroimaging">
+          <p class="kicker">NeuroImage · Task-fMRI · Published</p>
+          <h2 class="h2">Neural efficiency in creative decision-making</h2>
+          <p>Analyzed task-fMRI from expert athletes to study creative decision-making, focusing on sparse directed brain-network patterns and how expertise may rely on efficient network organization.</p>
+          <p>Published in <em>NeuroImage</em>; strengthened my experience in network neuroscience, statistical inference, scientific visualization, and manuscript development.</p>
+          <div class="tags"><span class="tag">Task-fMRI</span><span class="tag">Directed networks</span><span class="tag">Neural efficiency</span></div>
+          <div class="section__foot"><a class="btn" href="https://doi.org/10.1016/j.neuroimage.2026.121961" target="_blank" rel="noopener">Open DOI</a><a class="btn" href="publications.html">Publication entry</a></div>
+        </article>
+
+        <article class="card reveal" data-project-tags="neuroimaging">
+          <p class="kicker">Resting-state fMRI · Motor learning · Under review</p>
+          <h2 class="h2">Cortical–subcortical network reconfiguration after motor learning</h2>
+          <p>My M.Sc. thesis studies how motor practice reorganizes cortical and subcortical brain networks, and how this reconfiguration relates to accuracy, speed, and performance improvement.</p>
+          <p>Connects resting-state fMRI, connectivity analysis, and behavioral outcomes, with a focus on interpretable network-level mechanisms.</p>
+          <div class="tags"><span class="tag">rs-fMRI</span><span class="tag">Motor learning</span><span class="tag">Accuracy-speed networks</span></div>
+          <div class="section__foot"><a class="btn" href="publications.html">See manuscript entry</a></div>
+        </article>
+
+        <article class="card reveal" data-project-tags="biosignal computational">
+          <p class="kicker">EEG signal processing · Bayesian filtering</p>
+          <h2 class="h2">EEG ocular artifact removal using particle filtering</h2>
+          <p>Designed a Bayesian denoising framework to estimate clean EEG activity while tracking time-varying ocular contamination from EOG-related artifacts.</p>
+          <p>Targeted non-Gaussian, non-stationary noise conditions where conventional linear filtering distorts task-relevant neural rhythms — built around preserving downstream ERP, time–frequency, and classification features.</p>
+          <div class="tags"><span class="tag">Particle filtering</span><span class="tag">Artifact correction</span><span class="tag">Bayesian modeling</span></div>
+        </article>
+
+        <article class="card reveal" data-project-tags="biosignal">
+          <p class="kicker">SLEEP · EEG · Under review</p>
+          <h2 class="h2">Integrated information decomposition in REM dream emotion</h2>
+          <p>Applied information-theoretic analysis to REM pre-awakening EEG to study how dream emotional content is reflected in hemispheric information-flow patterns.</p>
+          <p>Uses EEG preprocessing, alpha-band analysis, mixed-effects modeling, surrogate testing, and integrated information decomposition.</p>
+          <div class="tags"><span class="tag">EEG</span><span class="tag">REM sleep</span><span class="tag">Information decomposition</span><span class="tag">Mixed-effects models</span></div>
+          <div class="section__foot"><a class="btn" href="publications.html">See manuscript entry</a></div>
+        </article>
+
+        <article class="card reveal" data-project-tags="biosignal">
+          <p class="kicker">EEG · Cognitive neuroscience · Under review</p>
+          <h2 class="h2">Frontal EEG spectral entropy &amp; decision failure under pressure</h2>
+          <p>Studied how frontal EEG complexity changes during decision-making under evaluative pressure, using filtering, spectral analysis, entropy estimation, and group-level statistical testing.</p>
+          <p>Supports my broader interest in using biosignals to estimate internal states such as attention, pressure, fatigue, and performance failure.</p>
+          <div class="tags"><span class="tag">EEG</span><span class="tag">Spectral entropy</span><span class="tag">Decision-making</span></div>
+          <div class="section__foot"><a class="btn" href="publications.html">See manuscript entry</a></div>
+        </article>
+
+        <article class="card reveal" data-project-tags="computational">
+          <p class="kicker">Computational neuroscience · Spiking models</p>
+          <h2 class="h2">Criticality in excitatory–inhibitory neural networks</h2>
+          <p>Simulated excitatory–inhibitory spiking networks using Izhikevich neuron models to study synchrony, phase transitions, and avalanche-like activity.</p>
+          <p>Combined numerical simulation with mean-field and bifurcation concepts to examine how E/I balance shapes network stability and information-processing regimes.</p>
+          <div class="tags"><span class="tag">Izhikevich model</span><span class="tag">Spiking networks</span><span class="tag">Criticality</span><span class="tag">Dynamical systems</span></div>
+        </article>
+
+        <article class="card reveal" data-project-tags="clinical neuroimaging">
+          <p class="kicker">NeuroImage: Reports · Structural MRI · Published</p>
+          <h2 class="h2">Early Alzheimer's diagnosis with VBM and deep learning</h2>
+          <p>Integrated structural MRI biomarkers with voxel-based morphometry and deep learning for Alzheimer's and MCI classification, using gray/white matter volume, CSF, WMH, and cortical thickness.</p>
+          <p>Biomarkers were transformed into multi-bit heatmap representations and used with CNN/FCN models for interpretable classification.</p>
+          <div class="tags"><span class="tag">Structural MRI</span><span class="tag">VBM</span><span class="tag">CAT12/SPM12</span><span class="tag">CNN/FCN</span></div>
+          <div class="section__foot"><a class="btn" href="https://doi.org/10.1016/j.ynirp.2025.100315" target="_blank" rel="noopener">Open DOI</a><a class="btn" href="publications.html">Publication entry</a></div>
+        </article>
+
+        <article class="card reveal" data-project-tags="movement clinical">
+          <p class="kicker">Movement AI · Rehabilitation · Conference paper</p>
+          <h2 class="h2">Interpretable skeleton-based deep learning for squat-quality assessment</h2>
+          <p>An end-to-end pipeline for automated movement-quality assessment using KIMORE 3D skeleton time series — temporal alignment, body-centered normalization, bone-direction features, motion derivatives, CNN-BiLSTM/TCN models, and Grad-CAM-style temporal explanations.</p>
+          <p>Goes beyond correct/incorrect classification to show which movement phase drove the decision — relevant to rehabilitation feedback and coaching.</p>
+          <div class="tags"><span class="tag">KIMORE</span><span class="tag">RGB-D skeletons</span><span class="tag">TCN</span><span class="tag">Grad-CAM</span></div>
+          <div class="section__foot"><a class="btn" href="publications.html">See publication entry</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <article class="card reveal">
+        <h2 class="h2">How these projects connect</h2>
+        <p>Across these projects, my goal is to make complex biological and behavioral data more interpretable and useful. Whether the data come from fMRI, EEG/EMG, structural MRI, or skeleton motion, I focus on models that are accurate, explainable, and tied to real outcomes — learning, decision quality, and clinical assessment.</p>
+        <div class="section__foot"><a class="btn btn--primary" href="research.html">Research summary</a><a class="btn" href="publications.html">Publication list</a></div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__grid">
+        <div><p class="footer__brand">Mohammad Rezaei</p><p class="muted">Computational neuroscience · NeuroAI · Brain signals</p></div>
+        <div class="footer__links"><a href="index.html">Home</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="contact.html">Contact</a></div>
+        <div class="footer__links"><a href="Mohammad_Rezaei_CV.pdf" target="_blank" rel="noopener">CV (PDF)</a><a href="https://github.com/mrezaei-sci" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/mohammad-rezaei-rze2001" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.youtube.com/@MoScientific" target="_blank" rel="noopener">YouTube</a></div>
+      </div>
+      <p class="footer__tiny">© <span id="year"></span> · Mohammad Rezaei · Built on GitHub Pages</p>
+    </footer>
+  </main>
+</body>
+</html>
